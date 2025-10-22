@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的网站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>半导体数据平台 - grc666</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .nav-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .nav-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-color: #4CAF50;
+        }
+        
+        .nav-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .nav-card p {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, #45a049, #4CAF50);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+        
+        .info-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .info-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .features li:before {
+            content: "✅ ";
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎访问我的网站！</h1>
-    <p>这是我的第一个GitHub Pages网站。</p>
-    <p>我现在可以开始学习网页开发了！</p>
+    <div class="container">
+        <header>
+            <h1>🔬 半导体测试数据平台</h1>
+            <p class="subtitle">专业器件测试与校准数据展示</p>
+        </header>
+        
+        <div class="nav-cards">
+            <div class="nav-card">
+                <h3>📊 SBD校准数据</h3>
+                <p>650V/1200V肖特基势垒二极管校准数据和测试结果</p>
+                <a href="sbd-calibration-data.html" class="btn">查看数据</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>📈 性能分析</h3>
+                <p>器件特性曲线和性能参数分析（可后续添加）</p>
+                <a href="#" class="btn" style="background: #95a5a6;">即将推出</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>📋 测试报告</h3>
+                <p>完整测试报告和规格书（可后续添加）</p>
+                <a href="#" class="btn" style="background: #95a5a6;">即将推出</a>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>平台特点</h3>
+            <ul class="features">
+                <li>专业的半导体器件测试数据展示</li>
+                <li>响应式设计，支持各种设备访问</li>
+                <li>清晰的数据可视化和表格展示</li>
+                <li>基于GitHub Pages的稳定托管</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
